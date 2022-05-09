@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="Assets/Bootstrap/bootstrap.min.css" />
   </head>
   <body>
-    <header>
-      <nav class="d-flex justify-content-between py-5" id="navBar">
+    <header class="my-0">
+      <nav class="d-flex justify-content-between py-5 my-0" id="navBar">
         <div class="logo px-5">
           <img src="Assets/Logos/logohome.png" alt="logo batman" />
         </div>
@@ -22,26 +22,29 @@
           <a href="game.html"><li class="list-inline-item liNav">GAME</li></a>
         </ul>
       </nav>
+
+
+      <!-- ------------------- scrool menu -------------------------- -->
       <div id="scrollMenu">
-        <div class="d-flex flex-column align-items-end py-3">
+        <div class="d-flex flex-column align-items-center py-3">
           <a href="#navBar"
             ><img src="Assets/Logos/logo_bat_flèche.png" alt="logo batman"
           /></a>
 
           <img
-            class="py-3"
+            class="py-3 icon"
             src="Assets/Logos/icon_facebook.png"
             alt="facebook"
             width="30px"
           />
           <img
-            class="py-3"
+            class="py-3 icon"
             src="Assets/Logos/icon_ig.png"
             alt="instagram"
             width="30px"
           />
           <img
-            class="py-3"
+            class="py-3 icon"
             src="Assets/Logos/icon_tw.png"
             alt="twitter"
             width="30px"
@@ -51,8 +54,7 @@
           /></a>
         </div>
       </div>
-
-      <div class="textIntro text-center">
+      <div class="textIntro text-center my-0">
         <p>
           Au nom de ses parents assassinés, Bruce Wajne mène une guerre
           éternelle contre les criminels de Gotham Citj. Il est vengeur. Il est
@@ -65,12 +67,17 @@
           <button class="text-uppercase">Les adversaires</button>
         </div>
       </div>
+      <!-- ------------------------------------------------------------ -->
+
+
+      
     </header>
-    <main>
+    <main class="my-0">
+      
       <div class="flecheHeader text-center py-5">
         <img src="Assets/Logos/flèche_down_header.png" alt="flêches" />
       </div>
-      <div class="p-5">
+      <div class="p-5" id="batmanAuCinema">
         <h4 class="batmanAuCinema init0">BATMAN AU CINÉMA</h4>
         <p class="my-0">
           Le personnage de Batman est un super héros de l’univers de DC Comics.
@@ -84,7 +91,7 @@
         </p>
       </div>
       <div id="batHome" class="d-flex justify-content-around p-5">
-
+        <!-- --------------------- image zooom -------------------- -->
         <div>
           <img
             src="Assets/Illustrations/Home/Bathome2.png"
@@ -136,7 +143,7 @@
           </div> 
         </div> 
       </div>
-
+      <!-- -------------------------------------------------------------------------- -->
 
       <div class="sliderBatman py-5">
         <img
@@ -190,7 +197,7 @@
           class="slides"
         />
       </div>
-      <div class="p-5">
+      <div class="p-5" id="nemesis">
         <h4 class="nemesis init0">NÉMESIS</h4>
         <p>
           Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il
@@ -202,28 +209,67 @@
           cinéma, on retrouve:
         </p>
       </div>
+
+
       <div id="batHome2" class="d-flex justify-content-around p-5">
-        <img
-          src="Assets/Illustrations/Home/Bathome5.png"
-          alt="batmnan"
-          class="zoom03 px-5"
-        />
-        <img
-          src="Assets/Illustrations/Home/Bathome6.png"
-          alt="batmnan"
-          class="zoom04 px-5"
-        />
-        <img
-          src="Assets/Illustrations/Home/Bathome7.png"
-          alt="batmnan"
-          class="zoom05 px-5"
-        />
+        <div>
+          <img
+            src="Assets/Illustrations/Home/Bathome6.png"
+            alt="batmnan"
+            class="zoom03 px-5"
+            id="batHome21"
+          />
+          <div style="margin: -25% 0 0 0;">
+            <img
+                  src="Assets/Illustrations/Home/Robert_Pattinson.png"
+                  alt="Robert_Pattinson"
+                  id="batHome211"
+                />
+                <p id="figCaptionBatHome4" style="font-size: smaller;">Robert Pattinson <br /> <span style="color: var(--color-6)">2022</p>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="Assets/Illustrations/Home/Bathome7.png"
+            alt="batmnan"
+            class="zoom04 px-5"
+            id="batHome22"
+          />
+          <div style="margin: -25% 0 0 0;">
+            <img
+                  src="Assets/Illustrations/Home/Robert_Pattinson.png"
+                  alt="Robert_Pattinson"
+                  id="batHome221"
+                />
+                <p id="figCaptionBatHome5" style="font-size: smaller;">Robert Pattinson <br /> <span style="color: var(--color-6)">2022</p>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="Assets/Illustrations/Home/Bathome8.png"
+            alt="batmnan"
+            class="zoom05 px-5"
+            id="batHome23"
+          />
+          <div style="margin: -25% 0 0 0;">
+            <img
+                  src="Assets/Illustrations/Home/Robert_Pattinson.png"
+                  alt="Robert_Pattinson"
+                  id="batHome231"
+                />
+                <p id="figCaptionBatHome6" style="font-size: smaller;">Robert Pattinson <br /> <span style="color: var(--color-6)">2022</p>
+          </div>
+        </div>
+
       </div>
+
       <div class="multimedia p-5">
         <h4 class="py-5 init0">MULTIMÉDIA</h4>
-        <div class="container p-5">
-          <div class="row text-center">
-            <div class="col-md-3">
+        <div class="container p-5 ">
+          <div class="row text-center d-flex align-items-center" style="font-size: smaller;">
+            <div class="col-md-3 ">
               <img
                 src="Assets/Logos/Icones en + dans Home/icon_flèche_1.png"
                 alt="icon flêche droite"
@@ -299,8 +345,6 @@
           <div class="text-center p-5"><button>CONFIRMER</button></div>
         </form>
       </div>
-    </main>
-    <footer class="p-5">
       <div class="d-flex footSlider justify-content-around py-5">
         <div>
           <img
@@ -405,6 +449,8 @@
           />
         </div>
       </div>
+    </main>
+    <footer class="p-5 my-0 ">
       <div class="copyright">
         <p class="text-center py-5">
           <span
@@ -415,19 +461,19 @@
         </p>
       </div>
       <div
-        class="footerIcon d-flex justify-content-center align-item-center px-5"
+        class="footerIcon d-flex justify-content-center align-items-center px-5"
       >
         <img src="Assets/Logos/logo_sayna_white.png" alt="logo Sayna" />
-        <img src="Assets/Logos/icon_x.png" alt="X" />
+        <img src="Assets/Logos/icon_x.png" alt="X" class="px-2"/>
         <img src="Assets/Logos/icon_DC.png" alt="DC" />
         <div class="d-flex px-5">
           <img
-            class="px-3"
+            class="px-3 icon"
             src="Assets/Logos/icon_facebook.png"
             alt="facebook"
           />
-          <img class="px-3" src="Assets/Logos/icon_ig.png" alt="instagram" />
-          <img class="px-3" src="Assets/Logos/icon_tw.png" alt="twitter" />
+          <img class="px-3 icon" src="Assets/Logos/icon_ig.png" alt="instagram" />
+          <img class="px-3 icon" src="Assets/Logos/icon_tw.png" alt="twitter" />
         </div>
       </div>
     </footer>

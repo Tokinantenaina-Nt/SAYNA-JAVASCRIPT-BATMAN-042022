@@ -2,7 +2,11 @@
 
 window.onload = () => {
   document.querySelector(".textIntro").classList.add("init1");
-
+  // document.querySelector(".textIntro").style.cssText = `
+  // margin: 50px;
+  // border-left: 1px solid var(--color-3);
+  // border-right: 1px solid var(--color-3);
+  // `;
   window.addEventListener("scroll", (e) => {
     console.log(scrollY);
     // -------- menu à côté --------------
@@ -82,6 +86,16 @@ window.onload = () => {
   const figCaptionBatHome2 = document.querySelector("#figCaptionBatHome2");
   const figCaptionBatHome3 = document.querySelector("#figCaptionBatHome3");
 
+  const batHome21 = document.querySelector("#batHome21");
+  const batHome22 = document.querySelector("#batHome22");
+  const batHome23 = document.querySelector("#batHome23");
+  const batHome211 = document.querySelector("#batHome211");
+  const batHome221 = document.querySelector("#batHom221");
+  const batHome231 = document.querySelector("#batHome231");
+  const figCaptionBatHome4 = document.querySelector("#figCaptionBatHome4");
+  const figCaptionBatHome5 = document.querySelector("#figCaptionBatHome5");
+  const figCaptionBatHome6 = document.querySelector("#figCaptionBatHome6");
+
   batHome11.addEventListener("mouseenter", () => {
     figCaptionBatHome1.style.opacity = "1";
     batHome111.style.opacity = "0.5";
@@ -107,5 +121,33 @@ window.onload = () => {
   batHome13.addEventListener("mouseout", () => {
     figCaptionBatHome3.style.opacity = "0";
     batHome131.style.opacity = "0";
+  });
+
+  batHome21.addEventListener("mouseenter", () => {
+    console.log("entrer !!!");
+    // figCaptionBatHome4.style.opacity = "1";
+    // batHome211.style.opacity = "0.5";
+  });
+  batHome21.addEventListener("mouseout", () => {
+    figCaptionBatHome4.style.opacity = "0";
+    batHome211.style.opacity = "0";
+  });
+
+  batHome22.addEventListener("mouseenter", () => {
+    figCaptionBatHome5.style.opacity = "1";
+    batHome221.style.opacity = "0.5";
+  });
+  batHome22.addEventListener("mouseout", () => {
+    figCaptionBatHome5.style.opacity = "0";
+    batHome221.style.opacity = "0";
+  });
+
+  batHome23.addEventListener("mouseenter", () => {
+    figCaptionBatHome6.style.opacity = "1";
+    batHome231.style.opacity = "0.5";
+  });
+  batHome23.addEventListener("mouseout", () => {
+    figCaptionBatHome6.style.opacity = "0";
+    batHome231.style.opacity = "0";
   });
 };
