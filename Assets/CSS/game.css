@@ -1,0 +1,10 @@
+
+header {
+    background: url(../Illustrations/Game/Batgame1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grdTitre{
+    padding: 20% 20% 20% 10%;
+}

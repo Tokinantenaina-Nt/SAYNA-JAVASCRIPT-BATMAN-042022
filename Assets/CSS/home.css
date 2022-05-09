@@ -1,0 +1,84 @@
+header {
+ background: url(../Illustrations/Home/Bathome1.png); 
+ background-size: cover;
+ background-repeat: no-repeat;  
+}
+
+
+
+.textIntro{
+    
+padding: 20%;
+transform: translateX(-100%);
+visibility: hidden;
+opacity: 0;
+   
+}
+.flecheHeader{
+    
+}
+.batmanAuCinema {
+   
+}
+.sliderBatman img{
+width: 100%;
+}
+.prenonsContact {
+    background-color:linear-gradient(var);
+}
+input::placeholder {
+    color: var(--color-3);
+    
+}
+input, select, option {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid var(--color-3);
+    width: 100%;
+
+}
+ footer .footerIcon img{
+    height: 50%;
+ }
+ .text-small {
+     font-size: smaller;
+ }
+.slides{
+    display: none;
+}
+
+
+.slideTextAnimationDisplay {
+    display: block;
+    transition: 2s;
+}
+
+#figCaptionBatHome1,
+#figCaptionBatHome2,
+#figCaptionBatHome3 {
+    background: var(--gradient1rgba);
+    opacity: 0.5;
+    width: 75%;
+    text-align: center;
+    border-radius: 20px;
+    margin: -10% 25% 10% 40%;
+    opacity: 0;
+    transition: 0.6s ease;
+    /* display: none; */
+    
+} 
+
+#batHome11:hover, 
+#batHome12:hover, 
+#batHome13:hover {
+    width: 120%;
+    transition: 0s;
+}
+#batHome111,
+#batHome121,
+#batHome131 {
+    padding-left: 15%;
+    opacity: 0;
+    transition: 0.6s ease;
+    /* display: none; */
+}

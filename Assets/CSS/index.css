@@ -1,0 +1,70 @@
+/* --------------------- General Class ---------------- */
+:root {
+    --color-1:#ffffff;
+    --color-2: #000000 ;
+    --color-3: #c4c4cc ;
+    --gradient1 : linear-gradient(to button, #eddebf 40%, #890008 60%) ;
+    --gradient1rgba : linear-gradient(to right, RGB(237,222,191,0.2)40%, RGB(137,0,8,0.2) 60%);
+    --color-4: #b11313;
+    --color-5: #f8f184;
+    --color-6: #ffff00;
+    --color-7: ;
+  }
+*{
+    color: var(--color-1);
+}
+html body{
+    background-color: #000000;
+}
+
+
+header li {
+    list-style-type: none;
+}
+header li:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.bold_and_underline {
+    font-weight: bold;
+    text-decoration: underline;
+}
+#scrollMenu {
+    left : 90%;
+    top: 200px ;
+    transition: 0.3s ease ;
+    position: absolute;
+    z-index: 1000;
+}
+
+/* ------------ animation ------------  */
+.init0 {
+transform: translateX(-100%);
+visibility: hidden;
+opacity: 0;
+}
+.init1{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    transition: 0.8s;
+}
+.zoom0,.zoom00,
+.zoom01,
+.zoom02, .zoom03, .zoom04, .zoom05 {
+    visibility: hidden;
+    opacity: 0;
+    width: 0px;
+}
+.zoom1 {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    transition: 2s;
+}
+button {
+    width: 10rem;
+    height : 3rem;
+    background-color: var(--gradient1) ;
+
+}
