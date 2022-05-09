@@ -3,8 +3,32 @@ header {
  background-size: cover;
  background-repeat: no-repeat;  
 }
+#scrollMenu {
+    left : 90%;
+    top: 200px ;
+    transition: 0.3s ease ;
+    position: absolute;
+    z-index: 1; 
+}
 
+.icon:hover {
+color: var(--color-6);
+cursor: pointer;
 
+} 
+
+main, footer, header .textIntro{
+    margin: 50px;
+    border-left: 2px solid rgba(255, 255, 255, 0.5 );
+    border-right: 2px solid rgba(255, 255, 255, 0.5 );
+}
+
+header nav{
+    margin: 50px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5 );
+    border-left: 2px solid rgba(255, 255, 255, 0.5 );
+    border-right: 2px solid rgba(255, 255, 255, 0.5 );
+}
 
 .textIntro{
     
@@ -14,14 +38,11 @@ visibility: hidden;
 opacity: 0;
    
 }
-.flecheHeader{
-    
-}
-.batmanAuCinema {
-   
-}
-.sliderBatman img{
+
+
+.sliderBatman img {
 width: 100%;
+
 }
 .prenonsContact {
     background-color:linear-gradient(var);
@@ -37,15 +58,16 @@ input, select, option {
     width: 100%;
 
 }
- footer .footerIcon img{
-    height: 50%;
- }
+ 
  .text-small {
      font-size: smaller;
  }
 .slides{
     display: none;
+width: 150%;
+overflow:visible;
 }
+
 
 
 .slideTextAnimationDisplay {
@@ -71,8 +93,8 @@ input, select, option {
 #batHome11:hover, 
 #batHome12:hover, 
 #batHome13:hover {
-    width: 120%;
-    transition: 0s;
+    transform: scale(1.5);
+    transition: 0s ease-out;
 }
 #batHome111,
 #batHome121,
@@ -82,3 +104,13 @@ input, select, option {
     transition: 0.6s ease;
     /* display: none; */
 }
+#batHome11, 
+#batHome12, 
+#batHome13, 
+#batHome21, 
+#batHome22, 
+#batHome23 {
+width: 100%;
+}
+
+#formulaire {}

@@ -8,3 +8,9 @@ header {
 .grdTitre{
     padding: 20% 20% 20% 10%;
 }
+
+.quizzNiveau1 li {
+    list-style-type: none;
+    background-color: var(--color-3);
+    width: 300px;
+}

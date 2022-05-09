@@ -29,14 +29,10 @@ header li:hover{
     font-weight: bold;
     text-decoration: underline;
 }
-#scrollMenu {
-    left : 90%;
-    top: 200px ;
-    transition: 0.3s ease ;
-    position: absolute;
-    z-index: 1000;
-}
 
+footer .footerIcon img{
+    height: 50%;
+ }
 /* ------------ animation ------------  */
 .init0 {
 transform: translateX(-100%);
@@ -63,8 +59,21 @@ opacity: 0;
     transition: 2s;
 }
 button {
+    border: none;
     width: 10rem;
     height : 3rem;
-    background-color: var(--gradient1) ;
+    background: linear-gradient(to right, RGB(237,222,191,0.2)40%, RGB(137,0,8,0.2) 60%);
+    transition: 0.5s ease-in-out;
+}
 
+button:hover{
+    color: var(--color-6);
+    transform: scale(1.01);
+    width: 10rem;
+    height : 3rem;
+    background: linear-gradient(to right, RGB(237,222,191,0.6)40%, RGB(137,0,8,0.6) 60%);
+
+}
+.copyright p {
+    font-size: smaller;
 }
